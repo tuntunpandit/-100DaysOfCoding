@@ -1,0 +1,47 @@
+// 1. Random Color
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+
+
+// 2.  What is the difference between ‘String’ and ‘string’ 
+
+
+let foo = 'abc'         // primitive
+let boo = new String()  // object
+
+console.log(foo instanceof String)  // false
+console.log(boo instanceof String)  // true
+
+console.log(typeof foo)  // 'string' <-- notice not String
+console.log(typeof boo)  // object
+
+
+
+// 3.  What is the difference between ‘String’ and ‘string’
+
+<script> 
+    let a1 = "Hello World";  // primitive
+    let b1 = "Hello World";  // primitive
+    console.log(a1 != b1); 
+    let a2 = new String("Hello World");  // object
+    let b2 = new String("Hello World");  // object
+    console.log(a2 != b2); 
+</script> 
+
+Output:
+
+false
+true
+
+
+// 4.  DOM Elements Properties
+
+http://www.javascriptkit.com/domref/elementproperties.shtml
