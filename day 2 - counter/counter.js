@@ -63,13 +63,17 @@ btns.forEach((btn) => {
 })
 
 function changeValueColor(counter) {
-    if(counter > 0) {
-        value.style.color = "green";
-    }
-    if (counter < 0) {
-        value.style.color = "red";
-    }
-    if(counter === 0) {
-        value.style.color = "black";
-    }
+    // if(counter > 0) {
+    //     value.style.color = "green";
+    // }
+    // if (counter < 0) {
+    //     value.style.color = "red";
+    // }
+    // if(counter === 0) {
+    //     value.style.color = "black";
+    // }
+
+
+    // nested ternary operator
+    counter > 0 ? (value.style.color = 'green') : (counter < 0 ? (value.style.color = 'red') : value.style.color = 'black') ;
 }
